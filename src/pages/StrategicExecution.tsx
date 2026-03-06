@@ -1,5 +1,4 @@
 import {
-  BulletList,
   ImageWithText,
   StatsSection,
   TextWithSidebar,
