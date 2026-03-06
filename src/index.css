@@ -1,0 +1,36 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap";
+@import "tailwindcss";
+
+@theme {
+  /* Nature-inspired palette (from reference) */
+  --color-cream: #F8F5EF;
+  --color-off-white: #F7F7F7;
+  --color-sage: #DDEEE6;
+  --color-sage-dark: #C5E0D5;
+  --color-forest: #3A4C47;
+  --color-forest-light: #4F7757;
+  --color-forest-muted: #5A8A6A;
+  --color-earth: #332D29;
+  --color-earth-light: #5A2D2F;
+  --color-charcoal: #444444;
+  --color-charcoal-light: #555555;
+
+  /* Section theme tokens */
+  --color-bg-light: #F8F5EF;
+  --color-bg-dark: #3A4C47;
+  --color-text-light: #332D29;
+  --color-text-dark: #F8F5EF;
+  --color-text-muted-light: #555555;
+  --color-text-muted-dark: #C5E0D5;
+  --color-accent-light: #3A4C47;
+  --color-accent-dark: #DDEEE6;
+
+  --font-raleway: "Raleway", sans-serif;
+  --font-sans: "Raleway", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-raleway);
+  }
+}
