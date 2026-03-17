@@ -57,6 +57,8 @@ export interface ImageWithTextContent {
     label: string;
     href?: string;
   };
+  /** Listas con título para mostrar debajo de la descripción */
+  lists?: { title: string; items: string[] }[];
 }
 
 export interface VideoContent {
@@ -70,6 +72,8 @@ export interface StatsCard {
   title: string;
   value: string;
   subtitle?: string;
+  /** Etiqueta de la subsección a la que pertenece el card (ej: "Capex estimado") */
+  section?: string;
 }
 
 export interface StatsSectionContent {
@@ -77,6 +81,8 @@ export interface StatsSectionContent {
   description?: string;
   cards: StatsCard[];
   columns?: 2 | 3 | 4;
+  /** Si se usa, agrupa los cards por section y muestra el título de cada grupo */
+  useSectionLabels?: boolean;
 }
 
 export interface TimelinePhase {
@@ -91,6 +97,8 @@ export interface TimelineContent {
   description?: string;
   phases: TimelinePhase[];
   duration?: string;
+  /** Si true, renderiza como div sin wrapper de sección (para usar en grid) */
+  embedded?: boolean;
 }
 
 export interface TextWithSidebarContent {

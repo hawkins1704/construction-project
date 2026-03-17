@@ -42,8 +42,23 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
         {content.title}
       </h2>
       {content.description && (
-        <p className={`mb-6 text-base ${textMutedClass}`}>{content.description}</p>
+        <p className={`mb-6 text-base leading-relaxed ${textMutedClass}`}>{content.description}</p>
       )}
+      {content.lists?.map((list, i) => (
+        <div key={i} className="mb-6 last:mb-0">
+          <h4 className={`mb-3 text-sm font-semibold uppercase tracking-wider ${textClass}`}>
+            {list.title}
+          </h4>
+          <ul className={`space-y-2 ${textMutedClass}`}>
+            {list.items.map((item, j) => (
+              <li key={j} className="flex items-start gap-2">
+                <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${isLight ? 'bg-forest' : 'bg-sage'}`} />
+                <span className="text-base">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
       {content.button && (
         <Button
           variant="primary"

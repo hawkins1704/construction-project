@@ -15,19 +15,20 @@ export const Home = () => {
     <>
       <HeroWithSidebar
         content={{
-          title: 'Fundamento del Proyecto',
-          mainText: `Este proyecto desarrolla una vivienda unifamiliar de escala eficiente, diseñada para maximizar funcionalidad, estética neutra de alta reventa y control estricto de costos. La estrategia se basa en diferenciación inteligente (sin sobrecostos) y ejecución directa tipo desarrollador boutique familiar.`,
+          title: 'El Proyecto en Cifras y Concepto',
+          mainText: `Fundamento del Proyecto: Eficiencia Evolutiva
+
+Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de valor. Con un área total de 2,955 sqft, el diseño prioriza la habitabilidad inteligente: 2,064 sqft de área climatizada (Living Area) donde cada pie cuadrado ha sido optimizado para el flujo de vida moderna, complementado con 891 sqft de espacios funcionales y de transición (Garage, Porche y Exterior) que extienden la huella térmica de la casa sin elevar los costos operativos.`,
           sidebar: {
             title: 'Programa del proyecto',
             items: [
-              { label: 'Área bajo aire (Living)', value: '1,522 sqft' },
-              { label: 'Garage', value: '533 sqft' },
-              { label: 'Área total bajo techo', value: '2,055 sqft' },
-              { label: 'Lote', value: '13,075 sqft' },
+              { label: 'Área climatizada (Living)', value: '2,064 sqft' },
+              { label: 'Garage', value: '588 sqft' },
+              { label: 'Área total bajo techo', value: '2,955 sqft' },
+              { label: 'Lote', value: '13,057 sqft' },
             ],
           },
-          footerText:
-            'El enfoque no es lujo innecesario, sino una vivienda "correcta", bien resuelta, con bajo mantenimiento y adaptable a dos usos: venta retail o renta de corto plazo.',
+      
           backgroundImage: HERO_BG_IMAGE,
         }}
       />
@@ -35,23 +36,23 @@ export const Home = () => {
       <StatsSection
         theme="dark"
         content={{
-          title: 'Fundamento Económico del Proyecto',
+          title: 'Fundamento Económico: Optimización de Activos',
           description:
-            'La economía del proyecto se sustenta en comparables idénticos validados y costos de construcción prudentes.',
+            'El proyecto se basa en la Tasa de Retorno por Pie Cuadrado (Yield per SQFT). Al mantener una escala eficiente, reducimos el CAPEX inicial y los tiempos de ejecución, permitiendo un precio de salida competitivo que captura al segmento de mercado con mayor capacidad de cierre financiero en Oconee.',
           columns: 3,
+          useSectionLabels: true,
           cards: [
-            { title: 'Lote', value: '$45,000' },
-            { title: 'Construcción living (1,522 × $115)', value: '$175,030' },
-            { title: 'Construcción garage (533 × $55)', value: '$29,315' },
-            { title: 'Soft costs + contingencia', value: '$36,000' },
-            { title: 'Total inversión estimada', value: '$287,000', subtitle: 'CAPEX base' },
-            { title: 'Comparable vendido', value: '$339,000', subtitle: 'Validación ARV' },
-            { title: 'Comparable listado', value: '$339,000' },
-            { title: 'Proyección 12 meses (+5%)', value: '~$356,000', subtitle: 'Prudente' },
-            { title: 'Comisión + closing', value: '6.5%', subtitle: 'Costos de salida' },
-            { title: 'Conservador', value: '~10%', subtitle: 'Rango de retorno' },
-            { title: 'Base', value: '~13–14%' },
-            { title: 'Optimista', value: '~16%' },
+            { title: 'Lote', value: '$45,000', section: 'Capex estimado' },
+            { title: 'Construcción Living (2,064 × $115)', value: '$237,360', section: 'Capex estimado' },
+            { title: 'Construcción Garage (588 × $55)', value: '$32,340', section: 'Capex estimado' },
+            { title: 'Soft costs + contingencia (10%)', value: '$26,970', section: 'Capex estimado' },
+            { title: 'Total inversión', value: '$296,670', section: 'Capex estimado' },
+            { title: 'Comparables', value: 'XX', section: 'Validación de ARV' },
+            { title: 'Proyección 12 meses', value: '$526,320', section: 'Validación de ARV' },
+            { title: 'Comisión + closing (estimado)', value: '6.5%', section: 'Costos de Salida' },
+            { title: 'Conservador ($230/sf)', value: '$178,050', subtitle: '60% · $474,720 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Objetivo ($255/sf)', value: '$229,650', subtitle: '77% · $526,320 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Optimista ($280/sf)', value: '$281,250', subtitle: '94% · $577,920 ARV', section: 'Rango de Retorno con Salida Incluida' },
           ],
         }}
       />
@@ -60,9 +61,9 @@ export const Home = () => {
         theme="light"
         content={{
           title: 'Ubicación Estratégica y Demanda',
-          description: `La ubicación presenta un equilibrio atractivo entre precio y estilo de vida: entorno natural, baja densidad y demanda consistente para vivienda principal y/o escapadas. El mercado muestra absorción real en el rango de $339k para el mismo modelo, reforzando la tesis de salida.
+          description: `Situado en un lote premium de 13,057 sqft, el emplazamiento capitaliza la migración hacia entornos naturales con conectividad técnica. La demanda en este sector busca la calidez de la madera tradicional de Carolina del Sur fusionada con estándares de eficiencia energética modernos, una combinación que nuestra propuesta "Halcón de Cedro" domina por completo.
 
-Perfiles de demanda principales: Familias que buscan espacio y tranquilidad, compradores relocando desde mercados más caros, usuarios de segunda vivienda, e inversionistas interesados en Airbnb (si regulación lo permite).`,
+Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores relocalizándose desde mercados más costosos, usuarios de segunda vivienda, inversionistas interesados en AB&B.`,
           image: {
             url: PLACEHOLDER_IMAGE,
             alt: 'Ubicación estratégica',
@@ -74,17 +75,39 @@ Perfiles de demanda principales: Familias que buscan espacio y tranquilidad, com
       <ImageWithText
         theme="dark"
         content={{
-          title: 'Diagnóstico del Lote',
-          description: `El lote (13,075 sqft) presenta condiciones aptas para desarrollo residencial estándar, con verificación documental y técnica respaldada por anexos.
-
-Componentes del diagnóstico: Compatibilidad de uso y restricciones (covenants/HOA si aplica), setbacks, dimensiones y encaje del diseño, acceso e infraestructura (vías, servicios), factores físicos (topografía, drenaje, vegetación), y revisión de riesgos ambientales y de servidumbres.
-
-Anexos clave: Deed, Survey, Setbacks y dimensiones, vista aérea, plan maestro, covenants.`,
+          title: 'Viabilidad Técnica y Financiera: Diagnóstico de Lote',
+          description: 'Con una superficie de 0.3 acres (13,057 sqft), el diagnóstico revela un coeficiente de ocupación ideal que permite privacidad perimetral y una integración orgánica de la estructura. La orientación de la vivienda maximiza la luz natural y el drenaje pluvial, minimizando los movimientos de tierra complejos.',
           image: {
             url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
             alt: 'Diagnóstico del lote',
           },
           imagePosition: 'left',
+          lists: [
+            {
+              title: 'Componentes del Diagnóstico',
+              items: [
+                'Compatibilidad de uso y restricciones',
+                'Setbacks',
+                'Dimensiones',
+                'Encaje del diseño',
+                'Acceso e infraestructuras (vías, servicios)',
+                'Factores físicos: topografía, drenaje, vegetación',
+                'Revisión de riesgos ambientales y servidumbre si aplica',
+              ],
+            },
+            {
+              title: 'Anexos clave en el sitio',
+              items: [
+                'Deed',
+                'Survey',
+                'Setbacks',
+                'Dimensiones',
+                'Vista aérea',
+                'Plan Maestro',
+                'Covenants',
+              ],
+            },
+          ],
         }}
       />
 
@@ -92,14 +115,22 @@ Anexos clave: Deed, Survey, Setbacks y dimensiones, vista aérea, plan maestro, 
         theme="light"
         content={{
           title: 'Arquitectura del Capital',
-          description: `El proyecto se plantea con arquitectura de capital simple y eficiente, coherente con desarrollo boutique: capital de desarrollo (equity) aportado por el equipo, alternativa de capital privado a corto plazo si se desea escalar o reducir exposición, horizonte de inversión estimado: 9–12 meses (con margen a 14 por contingencias).
-
-Principio rector: minimizar costos financieros, evitar sobreapalancamiento y mantener flexibilidad en salida.`,
+          description: 'Estructuramos el financiamiento mediante una matriz híbrida que asegura liquidez en cada fase de la obra. Principio rector: Minimizar costos financieros, evitar sobreapalancamiento, mantener flexibilidad en salida.',
           image: {
             url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
             alt: 'Arquitectura del capital',
           },
           imagePosition: 'right',
+          lists: [
+            {
+              title: 'El modelo contempla',
+              items: [
+                'Capital Base: Recursos propios lote o terreno',
+                'Línea de Crédito de Construcción: Activación escalonada según hitos de inspección',
+                'Fondo de Contingencia: 10% reservado para imprevistos de mercado',
+              ],
+            },
+          ],
         }}
       />
 
@@ -108,39 +139,59 @@ Principio rector: minimizar costos financieros, evitar sobreapalancamiento y man
         content={{
           title: 'Análisis de Volatilidad de Márgenes',
           description:
-            'Se modelan escenarios para medir sensibilidad del margen ante variaciones típicas. El objetivo no es "optimismo", sino mostrar rangos defendibles y mitigación por gestión.',
+            'Ante la fluctuación de los precios de la madera (Lumber futures), nuestro modelo implementa Sistema de Compras Anticipadas y Contratos de Precio Fijo con proveedores locales. Se modelan escenarios para medir sensibilidad del margen ante variaciones típicas. El objetivo no es optimismo, es mostrar rangos defendibles y mitigación por gestión.',
           items: [
-            'Construcción +10% (inflación/materiales)',
+            'Construcción +10% (inflación de materiales)',
             'Construcción -10% (excelente control de compras)',
-            'Venta -10% (presión de mercado o absorción lenta)',
-            'Venta +5% (apreciación moderada 12 meses)',
+            'Presión de mercado o absorción lenta',
+            'Venta +5% (apreciación moderada en 12 meses)',
           ],
         }}
       />
 
-      <Timeline
-        theme="light"
-        content={{
-          title: 'Plan Maestro de Desarrollo',
-          description: 'Fases ejecutivas del proyecto',
-          duration: 'Duración objetivo: 9–12 meses.',
-          phases: [
-            { phase: 1, title: 'Adquisición y verificación final del lote' },
-            { phase: 2, title: 'Permisos y coordinación técnica' },
-            { phase: 3, title: 'Inicio de obra + estructura' },
-            { phase: 4, title: 'MEP + cerramientos' },
-            { phase: 5, title: 'Acabados + punch list' },
-            {
-              phase: 6,
-              title: 'Marketing, posicionamiento y estrategia de salida',
-            },
-            {
-              phase: 7,
-              title: 'Venta y cierre / o preparación para renta (Plan B)',
-            },
-          ],
-        }}
-      />
+      <section className="bg-cream px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-earth md:text-4xl">
+              Plan Maestro de Desarrollo (Master Schedule)
+            </h2>
+            <p className="mx-auto max-w-2xl text-base text-charcoal">
+              Fases ejecutivas del proyecto y cronograma de ejecución crítica.
+            </p>
+          </div>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            <Timeline
+              theme="light"
+              content={{
+                title: 'Fases ejecutivas del proyecto',
+                embedded: true,
+                phases: [
+                  { phase: 1, title: 'Adquisición y verificación final del lote' },
+                  { phase: 2, title: 'Permisos y coordinación técnica' },
+                  { phase: 3, title: 'Inicio de obra + estructura' },
+                  { phase: 4, title: 'MEP + cerramientos' },
+                  { phase: 5, title: 'Acabados + punch list' },
+                  { phase: 6, title: 'Marketing, posicionamiento y estrategia de salida' },
+                  { phase: 7, title: 'Venta y cierre o preparación para la renta' },
+                ],
+              }}
+            />
+            <Timeline
+              theme="light"
+              content={{
+                title: 'Cronograma de ejecución crítica',
+                embedded: true,
+                phases: [
+                  { phase: 1, title: 'Site Prep & Foundation', description: 'Mes 1' },
+                  { phase: 2, title: 'Framing & Envelope (Madera)', description: 'Mes 2-3' },
+                  { phase: 3, title: 'Systems & Finishes', description: 'Mes 4-5' },
+                  { phase: 4, title: 'Landscape & Delivery', description: 'Mes 6' },
+                ],
+              }}
+            />
+          </div>
+        </div>
+      </section>
 
       <StatsSection
         theme="dark"
@@ -151,42 +202,73 @@ Principio rector: minimizar costos financieros, evitar sobreapalancamiento y man
           cards: [
             {
               title: 'Víctor',
-              value: 'Dirección estratégica',
-              subtitle: 'Presupuesto, control de costos, decisiones clave',
+              value: 'Dirección de Proyecto',
+              subtitle: 'Estrategia y cumplimiento de visión',
             },
             {
               title: 'Ura',
-              value: 'Diseño interior',
-              subtitle: 'Experiencia del espacio, valor percibido sin subir CAPEX',
+              value: 'Lead Architect',
+              subtitle: 'Diseño de eficiencia espacial y materiales',
+            },
+            {
+              title: 'General Contractor (GC)',
+              value: 'Ejecución técnica',
+              subtitle: 'Gestión de cuadrillas',
             },
             {
               title: 'Santiago',
-              value: 'Marketing digital',
-              subtitle: 'Narrativa visual, posicionamiento',
+              value: 'Project Controller',
+              subtitle: 'Control de costos y análisis de desviaciones',
             },
             {
-              title: 'Eduardo (Realtor)',
-              value: 'Estrategia comercial',
-              subtitle: 'Análisis de pricing, negociación y cierre',
+              title: 'Eduardo',
+              value: 'Realtor',
+              subtitle: 'Análisis de precios, estrategia comercial, negociación y cierre',
             },
           ],
         }}
       />
 
-      <ImageWithText
-        theme="light"
-        content={{
-          title: 'Recomendación Estratégica Final',
-          description: `El proyecto es coherente y defendible porque: el ARV está validado con comparables idénticos; los costos están modelados con criterio prudente e incluyen salida; la estrategia contempla sensibilidad, control de riesgo y plan alterno.
-
-Recomendación: proceder bajo disciplina de compras, cronograma estricto y estrategia de salida flexible (venta o renta), priorizando consistencia y calidad ejecutiva por encima de especulación.`,
-          image: {
-            url: PLACEHOLDER_IMAGE,
-            alt: 'Recomendación estratégica',
-          },
-          imagePosition: 'left',
-        }}
-      />
+      <section className="bg-cream px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-12">
+            <h2 className="mb-4 text-3xl font-bold text-earth md:text-4xl">
+              Recomendación Estratégica Final: La Visión &quot;Halcón de Cedro&quot;
+            </h2>
+            <p className="text-base text-charcoal">
+              Tras el diagnóstico técnico y el análisis de viabilidad financiera, nuestra conclusión es clara: el mercado en el condado de Oconee no demanda metros cuadrados, sino calidad de vida optimizada. La ejecución del Plan 1168D es nuestra hoja de ruta recomendada.
+            </p>
+          </div>
+          <Timeline
+            theme="light"
+            content={{
+              embedded: true,
+              phases: [
+                {
+                  phase: 1,
+                  title: 'Arbitraje de Valor',
+                  description: 'Al integrar una construcción de alta gama en un lote eficiente de 13,057 sqft, eliminamos el sobrecosto de mantenimiento operativo, garantizando una propiedad altamente líquida y atractiva tanto para el usuario final como para futuros inversionistas.',
+                },
+                {
+                  phase: 2,
+                  title: 'Mitigación de Riesgos',
+                  description: 'El uso de una estructura de madera estandarizada y el bloqueo de costos de materiales en la Fase 0 nos permite navegar con seguridad frente a la volatilidad del mercado de commodities en 2026, asegurando un margen neto predecible.',
+                },
+                {
+                  phase: 3,
+                  title: 'Coherencia con el Entorno',
+                  description: '"Halcón de Cedro" no compite con arquitecturas del sector, lo complementa. La arquitectura propuesta eleva la plusvalía del sector, creando un corredor de diseño moderno que consolida a esta área como el nuevo estándar de habitabilidad en Oconee.',
+                },
+                {
+                  phase: 4,
+                  title: 'Dictamen',
+                  description: 'Proceder con la ejecución inmediata. Capitalizar la baja fricción de este modelo arquitectónico para posicionar esta vivienda no solo como un hogar, sino como el activo inmobiliario más sólido y coherente de la región.',
+                },
+              ],
+            }}
+          />
+        </div>
+      </section>
       <ImageGrid
         theme="dark"
         content={{

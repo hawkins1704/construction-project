@@ -4,10 +4,10 @@ export interface RouteConfig {
 }
 
 export const routes: RouteConfig[] = [
-  { path: '/', label: 'Overview' },
-  { path: '/evaluacion-oportunidad', label: 'Opportunity Assessment' },
-  { path: '/analisis-comparativo', label: 'CMA' },
-  { path: '/tesis-inversion', label: 'Investment Thesis' },
-  { path: '/creacion-valor', label: 'Value Creation' },
-  { path: '/ejecucion-estrategica', label: 'Strategic Execution' },
+  { path: '/', label: 'Inicio' },
+  { path: '/evaluacion-oportunidad', label: 'Contexto y Análisis' },
+  { path: '/analisis-comparativo', label: 'Plan Maestro y Financiero' },
+  { path: '/tesis-inversion', label: 'Oportunidad de Inversión' },
+  { path: '/creacion-valor', label: 'Propuesta de valor' },
+  { path: '/ejecucion-estrategica', label: 'Estética y Funcionamiento' },
 ];

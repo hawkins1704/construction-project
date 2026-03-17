@@ -47,6 +47,11 @@ export const StatsSection = ({ theme = 'light', content }: StatsSectionProps) =>
               delay={i * 0.05}
               className={`rounded-2xl border p-6 shadow-sm transition-shadow hover:shadow-md ${cardBgClass}`}
             >
+              {content.useSectionLabels && card.section && (
+                <p className={`mb-2 text-xs font-semibold uppercase tracking-wider ${textMutedClass} opacity-80`}>
+                  {card.section}
+                </p>
+              )}
               <p className={`mb-1 text-sm font-medium ${textMutedClass}`}>{card.title}</p>
               <p className={`text-2xl font-bold ${textClass}`}>{card.value}</p>
               {card.subtitle && (

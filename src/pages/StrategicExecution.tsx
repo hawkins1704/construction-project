@@ -2,7 +2,6 @@ import {
   ImageWithText,
   StatsSection,
   TextWithSidebar,
-  Timeline,
 } from '../components/sections';
 
 const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop';
@@ -13,79 +12,55 @@ export const StrategicExecution = () => {
       <ImageWithText
         theme="light"
         content={{
-          title: 'Modelo de Ejecución Boutique',
-          description: `El proyecto será ejecutado bajo un modelo de desarrollo boutique con supervisión directa del equipo desarrollador. A diferencia de modelos de volumen masivo, esta estructura permite: toma de decisiones ágil, control estricto del presupuesto, seguimiento cercano del cronograma, ajustes estratégicos en tiempo real, y reducción de desviaciones financieras. El enfoque no es escala, sino precisión.`,
+          title: 'Estética y Posicionamiento',
+          description: `Este diseño es un excelente ejemplo de "Mountain Modern", lo cual encaja perfectamente en Oconee, SC. La propuesta combina la calidez de la madera tradicional de Carolina del Sur con estándares de eficiencia energética modernos.`,
           image: {
             url: PLACEHOLDER_IMAGE,
-            alt: 'Modelo boutique',
+            alt: 'Mountain Modern - Halcón de Cedro',
           },
           imagePosition: 'right',
         }}
       />
 
-      <Timeline
+      <TextWithSidebar
         theme="dark"
         content={{
-          title: 'Plan Maestro de Desarrollo',
-          duration: 'Duración estimada total: 9–12 meses',
-          phases: [
-            {
-              phase: 1,
-              title: 'Validación Final y Permisos (1–2 meses)',
-              items: [
-                'Revisión documental definitiva',
-                'Confirmación de encaje normativo',
-                'Gestión de permisos y aprobaciones',
-              ],
-            },
-            {
-              phase: 2,
-              title: 'Construcción Estructural (3–4 meses)',
-              items: [
-                'Movimiento de tierra',
-                'Cimentación',
-                'Estructura principal',
-                'Cerramientos',
-              ],
-            },
-            {
-              phase: 3,
-              title: 'Instalaciones y Sistemas (2–3 meses)',
-              items: ['Eléctrico', 'Plomería', 'HVAC', 'Inspecciones intermedias'],
-            },
-            {
-              phase: 4,
-              title: 'Acabados Finales (1–2 meses)',
-              items: ['Pisos', 'Carpintería', 'Pintura', 'Instalación de fixtures'],
-            },
-            {
-              phase: 5,
-              title: 'Comercialización (paralela a fase final)',
-              items: [
-                'Posicionamiento digital',
-                'Fotografía profesional',
-                'Estrategia de pricing',
-                'Activación del canal de venta',
-              ],
-            },
-          ],
+          title: 'Diagnóstico del Lote y Huella (Footprint)',
+          mainText: `Aprovechamiento de Fachada: El diseño presenta una fachada frontal estrecha con un garaje de carga frontal integrado, ideal para maximizar el espacio lateral en el lote de 13,057 sqft.
+
+Geometría: Uso de techos a dos aguas (Gables) pronunciados que facilitan el drenaje de nieve/lluvia, típicos de la arquitectura de Carolina del Sur.
+
+Relación Exterior: El plano destaca una integración fluida con el entorno mediante un "Outdoor Living" en la parte posterior y un porche de entrada que actúa como zona de transición térmica.`,
+          sidebar: {
+            title: 'Resumen de huella',
+            items: [
+              { label: 'Lote', value: '13,057 sqft' },
+              { label: 'Garaje frontal', value: 'Integrado' },
+              { label: 'Techos', value: 'Gables pronunciados' },
+              { label: 'Outdoor Living', value: 'Parte posterior' },
+            ],
+          },
         }}
       />
 
       <TextWithSidebar
         theme="light"
         content={{
-          title: 'Gobernanza y Control Financiero',
-          mainText:
-            'Se implementará una estructura interna básica de gobernanza con controles clave. El objetivo es evitar desviaciones silenciosas que erosionen el margen.',
+          title: 'Plan Maestro: Distribución Funcional',
+          mainText: `Planta única (One-story living), altamente demandada por su accesibilidad:
+
+Zona Social Open-Concept: La cocina con isla central se integra con el comedor y el "Living Room", creando un eje de convivencia de casi 40 pies de profundidad.
+
+Suite Principal Privada: Ubicada en el ala posterior derecha para máxima privacidad, con acceso directo al área de lavandería a través del clóset (un detalle de diseño premium).
+
+Habitaciones Secundarias: Dos dormitorios adicionales (BR 2 y BR 3) situados en el ala opuesta, compartiendo un baño completo, ideal para familias o configuración de oficina/estudio.`,
           sidebar: {
-            title: 'Controles',
+            title: 'Distribución',
             items: [
-              { label: 'Presupuesto', value: 'Cerrado antes inicio' },
-              { label: 'Órdenes de cambio', value: 'Control estricto' },
-              { label: 'Comparativa', value: 'Costos reales vs proyectados' },
-              { label: 'Revisión', value: 'Mensual del margen' },
-              { label: 'Decisiones críticas', value: 'Autorización centralizada' },
+              { label: 'Zona social', value: '~40 pies' },
+              { label: 'Suite principal', value: 'Ala posterior' },
+              { label: 'Dormitorios', value: 'BR 2 y BR 3' },
+              { label: 'Estilo', value: 'One-story' },
             ],
           },
         }}
@@ -94,28 +69,29 @@ export const StrategicExecution = () => {
       <StatsSection
         theme="dark"
         content={{
-          title: 'Matriz de Riesgos y Estrategia de Mitigación',
+          title: 'Especificaciones de Construcción (Madera y Acabados)',
+          description: 'De acuerdo a las elevaciones (Front, Rear, Left, Right side). Propuesta de Valor: "Textura y tradición en madera con estética contemporánea".',
           columns: 2,
           cards: [
             {
-              title: '1. Aumento costos construcción',
-              value: 'Mitigación',
-              subtitle: 'Compras anticipadas, contratos cerrados, comparativas múltiples',
+              title: 'Revestimiento (Siding)',
+              value: 'Vertical Board & Batten',
+              subtitle: 'Combinado con Lap Siding',
             },
             {
-              title: '2. Disminución precio venta',
-              value: 'Mitigación',
-              subtitle: 'Estrategia dual (venta o renta), pricing estratégico',
+              title: 'Carpintería',
+              value: 'Ventanales verticales',
+              subtitle: 'Maximizan entrada de luz natural en Living Area',
             },
             {
-              title: '3. Retrasos en permisos',
-              value: 'Mitigación',
-              subtitle: 'Gestión anticipada y documentación completa desde el inicio',
+              title: 'Garaje',
+              value: '588 sqft',
+              subtitle: 'Dos vehículos, profundidad para almacenamiento técnico o herramientas',
             },
             {
-              title: '4. Absorción lenta mercado',
-              value: 'Mitigación',
-              subtitle: 'Activación temprana de marketing y flexibilidad de salida',
+              title: 'Estética',
+              value: 'Mountain Modern',
+              subtitle: 'Textura y tradición en madera con estética contemporánea',
             },
           ],
         }}
@@ -124,46 +100,30 @@ export const StrategicExecution = () => {
       <StatsSection
         theme="light"
         content={{
-          title: 'Capital Humano y Roles Claves',
-          description: 'El modelo boutique se apoya en participación directa del núcleo desarrollador',
-          columns: 2,
+          title: 'Arquitectura de Espacios (Cifras Reales del Plano)',
+          description: 'Distribución optimizada para eficiencia térmica y vida al aire libre en Oconee.',
+          columns: 3,
           cards: [
             {
-              title: 'Víctor',
-              value: 'Dirección Estratégica y Financiera',
-              subtitle: 'Estructura de capital, control presupuestario, decisiones clave',
+              title: 'Área climatizada',
+              value: '2,064 sqft',
+              subtitle: 'Eficiencia térmica optimizada',
             },
             {
-              title: 'Ura',
-              value: 'Diseño Interior y Experiencia Espacial',
-              subtitle: 'Acabados, coherencia estética, valor percibido',
+              title: 'Espacios de transición',
+              value: '303 sqft',
+              subtitle: 'Porche frontal (111 sqft) + Outdoor Living posterior (192 sqft)',
             },
             {
-              title: 'Santiago',
-              value: 'Marketing y Posicionamiento Digital',
-              subtitle: 'Narrativa visual, presencia online, captación',
-            },
-            {
-              title: 'Eduardo',
-              value: 'Estrategia Comercial y Cierre',
-              subtitle: 'Pricing, negociación, ejecución de la venta',
+              title: 'Almacenamiento',
+              value: 'Pantry + Mudroom',
+              subtitle: 'Estratégicos al entrar desde el garaje',
             },
           ],
         }}
       />
 
-      <ImageWithText
-        theme="dark"
-        content={{
-          title: 'Conclusión de Ejecución Estratégica',
-          description: `El principal diferenciador del proyecto no es el diseño ni el mercado, sino la ejecución disciplinada. El modelo boutique permite: control financiero directo, reducción de riesgo especulativo, adaptabilidad ante cambios del mercado, y coherencia entre planificación y resultado. El proyecto demuestra que la precisión operativa puede ser más determinante que la escala.`,
-          image: {
-            url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
-            alt: 'Conclusión ejecución',
-          },
-          imagePosition: 'left',
-        }}
-      />
+      
     </>
   );
 };
