@@ -31,7 +31,7 @@ export const StatsSection = ({ theme = 'light', content }: StatsSectionProps) =>
               </h2>
             )}
             {content.description && (
-              <p className={`mx-auto max-w-2xl text-base ${textMutedClass}`}>
+              <p className={`mx-auto max-w-2xl text-paragraph ${textMutedClass}`}>
                 {content.description}
               </p>
             )}

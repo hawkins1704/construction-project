@@ -30,7 +30,7 @@ export const HeroWithSidebar = ({ content }: HeroWithSidebarProps) => {
                 {content.title}
               </h1>
             )}
-            <p className="whitespace-pre-line text-base leading-relaxed text-cream/95">
+            <p className="whitespace-pre-line text-paragraph leading-relaxed text-cream/95">
               {content.mainText}
             </p>
           </ScrollReveal>
@@ -59,7 +59,7 @@ export const HeroWithSidebar = ({ content }: HeroWithSidebarProps) => {
             duration={0.7}
             className="mt-10 border-t border-cream/30 pt-10"
           >
-            <p className="text-base leading-relaxed text-cream/95">{content.footerText}</p>
+            <p className="text-paragraph leading-relaxed text-cream/95">{content.footerText}</p>
           </ScrollReveal>
         )}
       </div>

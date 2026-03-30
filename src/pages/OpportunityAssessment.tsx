@@ -26,10 +26,10 @@ export const OpportunityAssessment = () => {
           columns: 3,
           cards: [
             { title: 'Adquisición del lote', value: '$45,000' },
-            { title: 'Construcción living (1,522 sqft × $115)', value: '$175,030' },
-            { title: 'Construcción garage (533 sqft × $55)', value: '$29,315' },
-            { title: 'Soft costs + permisos + contingencia', value: '$36,000' },
-            { title: 'Inversión total estimada', value: '$287,000' },
+            { title: 'Construcción living (2,064 sqft × $115)', value: '$237,360' },
+            { title: 'Construcción garage (588 sqft × $55)', value: '$32,340' },
+            { title: 'Soft costs + permisos + contingencia', value: '$48,546' },
+            { title: 'Inversión total estimada', value: '$318,246' },
           ],
         }}
       />
@@ -56,9 +56,9 @@ export const OpportunityAssessment = () => {
           title: 'Escenarios de Sensibilidad',
           columns: 3,
           cards: [
-            { title: 'Escenario Conservador ($339,000)', value: 'ROI ~10%' },
-            { title: 'Escenario Base ($349,000)', value: 'ROI ~13–14%' },
-            { title: 'Escenario Optimista (+5% – $356,000)', value: 'ROI ~16%' },
+            { title: 'Escenario Conservador ($443,863)', value: 'ROI ~10%' },
+            { title: 'Escenario Objetivo ($492,109)', value: 'ROI ~13–14%' },
+            { title: 'Escenario Optimista (+5% – $540,355)', value: 'ROI ~16%' },
           ],
         }}
       />
@@ -80,9 +80,9 @@ export const OpportunityAssessment = () => {
         theme="light"
         content={{
           title: 'Punto de Equilibrio',
-          description: `El precio mínimo estimado para cubrir inversión total considerando salida es aproximadamente $305,000.
+          description: `El precio mínimo estimado para cubrir inversión total considerando salida es aproximadamente $318,246.
 
-Por debajo de ese nivel, el margen se comprime significativamente. Por encima de $339,000, el proyecto entra en zona de retorno defendible.`,
+Por debajo de ese nivel, el margen se comprime significativamente. Por encima de $350,000, el proyecto entra en zona de retorno defendible.`,
           image: {
             url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
             alt: 'Punto de equilibrio',

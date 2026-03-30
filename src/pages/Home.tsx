@@ -7,8 +7,8 @@ import {
   Timeline,
 } from '../components/sections';
 
-const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop';
-const HERO_BG_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop';
+const HOME_IMAGE_1 = '/images/home-image-1.PNG';
+const HOME_IMAGE_2 = '/images/home-image-2.PNG';
 
 export const Home = () => {
   return (
@@ -29,7 +29,7 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
             ],
           },
       
-          backgroundImage: HERO_BG_IMAGE,
+          backgroundImage: HOME_IMAGE_1,
         }}
       />
 
@@ -45,14 +45,14 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
             { title: 'Lote', value: '$45,000', section: 'Capex estimado' },
             { title: 'Construcción Living (2,064 × $115)', value: '$237,360', section: 'Capex estimado' },
             { title: 'Construcción Garage (588 × $55)', value: '$32,340', section: 'Capex estimado' },
-            { title: 'Soft costs + contingencia (10%)', value: '$26,970', section: 'Capex estimado' },
-            { title: 'Total inversión', value: '$296,670', section: 'Capex estimado' },
-            { title: 'Comparables', value: 'XX', section: 'Validación de ARV' },
+            { title: 'Soft cost (8%) + contingencia (10%)', value: '$48,546', section: 'Capex estimado' },
+            { title: 'Total inversión', value: '$318,246', section: 'Capex estimado' },
+            { title: 'Comparables', value: '$492,109', section: 'Validación de ARV' },
             { title: 'Proyección 12 meses', value: '$526,320', section: 'Validación de ARV' },
             { title: 'Comisión + closing (estimado)', value: '6.5%', section: 'Costos de Salida' },
-            { title: 'Conservador ($230/sf)', value: '$178,050', subtitle: '60% · $474,720 ARV', section: 'Rango de Retorno con Salida Incluida' },
-            { title: 'Objetivo ($255/sf)', value: '$229,650', subtitle: '77% · $526,320 ARV', section: 'Rango de Retorno con Salida Incluida' },
-            { title: 'Optimista ($280/sf)', value: '$281,250', subtitle: '94% · $577,920 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Conservador ($230/sf)', value: '$125,617', subtitle: '28.30% · $443,863 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Objetivo ($255/sf)', value: '$173,863', subtitle: '35.33% · $492,109 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Optimista ($280/sf)', value: '$222,109', subtitle: '41.10% · $540,355 ARV', section: 'Rango de Retorno con Salida Incluida' },
           ],
         }}
       />
@@ -65,7 +65,7 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
 
 Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores relocalizándose desde mercados más costosos, usuarios de segunda vivienda, inversionistas interesados en AB&B.`,
           image: {
-            url: PLACEHOLDER_IMAGE,
+            url: HOME_IMAGE_2,
             alt: 'Ubicación estratégica',
           },
           imagePosition: 'right',
@@ -78,7 +78,7 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
           title: 'Viabilidad Técnica y Financiera: Diagnóstico de Lote',
           description: 'Con una superficie de 0.3 acres (13,057 sqft), el diagnóstico revela un coeficiente de ocupación ideal que permite privacidad perimetral y una integración orgánica de la estructura. La orientación de la vivienda maximiza la luz natural y el drenaje pluvial, minimizando los movimientos de tierra complejos.',
           image: {
-            url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
+            url: HOME_IMAGE_1,
             alt: 'Diagnóstico del lote',
           },
           imagePosition: 'left',
@@ -117,7 +117,7 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
           title: 'Arquitectura del Capital',
           description: 'Estructuramos el financiamiento mediante una matriz híbrida que asegura liquidez en cada fase de la obra. Principio rector: Minimizar costos financieros, evitar sobreapalancamiento, mantener flexibilidad en salida.',
           image: {
-            url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
+            url: HOME_IMAGE_2,
             alt: 'Arquitectura del capital',
           },
           imagePosition: 'right',
@@ -155,7 +155,7 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
             <h2 className="mb-4 text-3xl font-bold text-earth md:text-4xl">
               Plan Maestro de Desarrollo (Master Schedule)
             </h2>
-            <p className="mx-auto max-w-2xl text-base text-charcoal">
+            <p className="mx-auto max-w-2xl text-paragraph text-charcoal">
               Fases ejecutivas del proyecto y cronograma de ejecución crítica.
             </p>
           </div>
@@ -182,10 +182,60 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
                 title: 'Cronograma de ejecución crítica',
                 embedded: true,
                 phases: [
-                  { phase: 1, title: 'Site Prep & Foundation', description: 'Mes 1' },
-                  { phase: 2, title: 'Framing & Envelope (Madera)', description: 'Mes 2-3' },
-                  { phase: 3, title: 'Systems & Finishes', description: 'Mes 4-5' },
-                  { phase: 4, title: 'Landscape & Delivery', description: 'Mes 6' },
+                  {
+                    phase: 1,
+                    title: 'Validación final y permisos',
+                    description: '1-2 meses',
+                    items: [
+                      'Revisión documental definitiva',
+                      'Confirmación de encaje normativo',
+                      'Gestión de permisos y aprobaciones',
+                    ],
+                  },
+                  {
+                    phase: 2,
+                    title: 'Construcción estructural',
+                    description: '3-4 meses',
+                    items: [
+                      'Movimiento de tierra',
+                      'Cimentación',
+                      'Estructura principal',
+                      'Cerramientos',
+                    ],
+                  },
+                  {
+                    phase: 3,
+                    title: 'Instalaciones y sistemas',
+                    description: '2-3 meses',
+                    items: [
+                      'Eléctrico',
+                      'Plomería',
+                      'HVAC',
+                      'Inspecciones intermedias',
+                    ],
+                  },
+                  {
+                    phase: 4,
+                    title: 'Acabados finales',
+                    description: '1-2 meses',
+                    items: [
+                      'Pisos',
+                      'Carpintería',
+                      'Pintura',
+                      'Instalación de fixtures',
+                    ],
+                  },
+                  {
+                    phase: 5,
+                    title: 'Comercialización',
+                    items: [
+                      'Posicionamiento digital',
+                      'Fotografía profesional',
+                      'Estrategia de precios',
+                      'Activación canal de venta',
+                      'Nota: El marketing se inicia antes de la finalización total para reducir tiempo de absorción.'
+                    ],
+                  },
                 ],
               }}
             />
@@ -235,7 +285,7 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
             <h2 className="mb-4 text-3xl font-bold text-earth md:text-4xl">
               Recomendación Estratégica Final: La Visión &quot;Halcón de Cedro&quot;
             </h2>
-            <p className="text-base text-charcoal">
+            <p className="text-paragraph text-charcoal">
               Tras el diagnóstico técnico y el análisis de viabilidad financiera, nuestra conclusión es clara: el mercado en el condado de Oconee no demanda metros cuadrados, sino calidad de vida optimizada. La ejecución del Plan 1168D es nuestra hoja de ruta recomendada.
             </p>
           </div>

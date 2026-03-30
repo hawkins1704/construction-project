@@ -34,7 +34,7 @@ export const ImageGrid = ({ theme = 'light', content }: ImageGridProps) => {
               </h2>
             )}
             {content.description && (
-              <p className={`text-base ${textMutedClass}`}>{content.description}</p>
+              <p className={`text-paragraph ${textMutedClass}`}>{content.description}</p>
             )}
           </ScrollReveal>
         )}

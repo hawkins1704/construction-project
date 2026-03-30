@@ -29,7 +29,7 @@ export const Banner = ({ theme = 'light', content }: BannerProps) => {
               {content.title}
             </h1>
             {content.description && (
-              <p className={`mb-8 max-w-lg text-base md:text-lg ${textMutedClass}`}>
+              <p className={`mb-8 max-w-lg text-paragraph md:text-paragraph-lg ${textMutedClass}`}>
                 {content.description}
               </p>
             )}

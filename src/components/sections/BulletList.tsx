@@ -23,7 +23,7 @@ export const BulletList = ({ theme = 'light', content }: BulletListProps) => {
             </h2>
           )}
           {content.description && (
-            <p className={`mb-8 text-base ${textMutedClass}`}>{content.description}</p>
+            <p className={`mb-8 text-paragraph ${textMutedClass}`}>{content.description}</p>
           )}
           <ul
             className={`grid gap-4 ${

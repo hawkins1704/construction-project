@@ -29,7 +29,7 @@ export const Timeline = ({ theme = 'light', content }: TimelineProps) => {
               </h2>
             )}
             {content.description && (
-              <p className={`text-base ${textMutedClass}`}>{content.description}</p>
+              <p className={`text-paragraph ${textMutedClass}`}>{content.description}</p>
             )}
             {content.duration && (
               <p className={`mt-2 text-sm font-medium ${textMutedClass}`}>{content.duration}</p>
@@ -60,10 +60,10 @@ export const Timeline = ({ theme = 'light', content }: TimelineProps) => {
                 </div>
                 {/* Content - alternating: right of line (even) or left of line (odd) */}
                 <div
-                  className={`min-w-0 pl-12 md:max-w-[calc(50%-1.5rem)] md:pl-4 ${
+                  className={`min-w-0 pl-12 md:pl-4 ${
                     isRight
-                      ? 'md:ml-[calc(50%+1.5rem)] md:w-[calc(50%-1.5rem)]'
-                      : 'md:ml-0 md:pl-0 md:pr-4 md:text-right'
+                      ? 'md:ml-[calc(50%+1.5rem)] md:w-[calc(50%-1.5rem)] md:text-left'
+                      : 'md:ml-0 md:w-[calc(50%-1.5rem)] md:shrink-0 md:pl-0 md:pr-4 md:text-right'
                   }`}
                 >
                   <h3 className={`font-bold ${textClass}`}>{phase.title}</h3>
@@ -71,9 +71,18 @@ export const Timeline = ({ theme = 'light', content }: TimelineProps) => {
                     <p className={`mt-1 text-sm ${textMutedClass}`}>{phase.description}</p>
                   )}
                   {phase.items && phase.items.length > 0 && (
-                    <ul className={`mt-3 space-y-1.5 text-sm ${textMutedClass}`}>
+                    <ul
+                      className={`mt-3 space-y-1.5 text-sm ${textMutedClass} ${
+                        isRight ? 'md:text-left' : 'md:text-right'
+                      }`}
+                    >
                       {phase.items.map((item, j) => (
-                        <li key={j} className={`flex items-start gap-2 ${!isRight ? 'md:flex-row-reverse md:justify-end' : ''}`}>
+                        <li
+                          key={j}
+                          className={`flex items-start gap-2 ${
+                            isRight ? 'md:justify-start' : 'md:justify-end'
+                          }`}
+                        >
                           <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-60" />
                           <span>{item}</span>
                         </li>

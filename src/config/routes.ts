@@ -9,5 +9,5 @@ export const routes: RouteConfig[] = [
   { path: '/analisis-comparativo', label: 'Plan Maestro y Financiero' },
   { path: '/tesis-inversion', label: 'Oportunidad de Inversión' },
   { path: '/creacion-valor', label: 'Propuesta de valor' },
-  { path: '/ejecucion-estrategica', label: 'Estética y Funcionamiento' },
+  { path: '/ejecucion-estrategica', label: 'Estética y Posicionamiento' },
 ];

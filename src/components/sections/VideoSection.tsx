@@ -44,7 +44,7 @@ export const VideoSection = ({ theme = 'light', content }: VideoSectionProps) =>
               </h2>
             )}
             {content.description && (
-              <p className={`text-base ${textMutedClass}`}>{content.description}</p>
+              <p className={`text-paragraph ${textMutedClass}`}>{content.description}</p>
             )}
           </ScrollReveal>
         )}

@@ -28,7 +28,7 @@ export const TextWithSidebar = ({ theme = 'light', content }: TextWithSidebarPro
                 {content.title}
               </h2>
             )}
-            <p className={`whitespace-pre-line text-base leading-relaxed ${textMutedClass}`}>
+            <p className={`whitespace-pre-line text-paragraph leading-relaxed ${textMutedClass}`}>
               {content.mainText}
             </p>
           </ScrollReveal>
@@ -56,7 +56,7 @@ export const TextWithSidebar = ({ theme = 'light', content }: TextWithSidebarPro
             duration={0.7}
             className="mt-10 border-t border-charcoal/10 pt-10 lg:border-t-2"
           >
-            <p className={`text-base leading-relaxed ${textMutedClass}`}>
+            <p className={`text-paragraph leading-relaxed ${textMutedClass}`}>
               {content.footerText}
             </p>
           </ScrollReveal>

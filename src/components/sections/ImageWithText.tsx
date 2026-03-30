@@ -42,7 +42,7 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
         {content.title}
       </h2>
       {content.description && (
-        <p className={`mb-6 text-base leading-relaxed ${textMutedClass}`}>{content.description}</p>
+        <p className={`mb-6 text-paragraph leading-relaxed ${textMutedClass}`}>{content.description}</p>
       )}
       {content.lists?.map((list, i) => (
         <div key={i} className="mb-6 last:mb-0">

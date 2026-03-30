@@ -27,6 +27,10 @@
 
   --font-raleway: "Raleway", sans-serif;
   --font-sans: "Raleway", sans-serif;
+
+  /* Body paragraphs: default base + 2pt */
+  --text-paragraph: calc(1rem + 2pt);
+  --text-paragraph-lg: calc(1.125rem + 2pt);
 }
 
 @layer base {
