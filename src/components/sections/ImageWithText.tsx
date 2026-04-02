@@ -9,10 +9,21 @@ interface ImageWithTextProps extends BaseSectionProps {
 export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) => {
   const isLight = theme === 'light';
   const imageFirst = content.imagePosition === 'right';
+  const hasTwoImages = Boolean(content.secondImage);
+  const imagesLayout = content.imagesLayout ?? 'stack';
 
   const bgClass = isLight ? 'bg-cream' : 'bg-forest';
   const textClass = isLight ? 'text-earth' : 'text-cream';
   const textMutedClass = isLight ? 'text-charcoal' : 'text-sage-dark';
+
+  const imageFrameClass =
+    'overflow-hidden rounded-2xl aspect-[4/3] bg-charcoal/5 lg:aspect-auto lg:min-h-[280px]';
+
+  const pairContainerClass = hasTwoImages
+    ? imagesLayout === 'sideBySide'
+      ? 'flex flex-col gap-4 sm:flex-row sm:items-stretch'
+      : 'flex flex-col gap-4'
+    : '';
 
   const imageBlock = (
     <ScrollReveal
@@ -20,13 +31,36 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
       distance={50}
       duration={0.8}
       start="top 85%"
-      className="overflow-hidden rounded-2xl aspect-[4/3] bg-charcoal/5 lg:aspect-auto lg:min-h-[400px]"
+      className={
+        hasTwoImages
+          ? pairContainerClass
+          : `${imageFrameClass} lg:min-h-[400px]`
+      }
     >
-      <img
-        src={content.image.url}
-        alt={content.image.alt}
-        className="h-full w-full object-cover"
-      />
+      {hasTwoImages ? (
+        <>
+          <div className={`${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}>
+            <img
+              src={content.image.url}
+              alt={content.image.alt}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className={`${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}>
+            <img
+              src={content.secondImage!.url}
+              alt={content.secondImage!.alt}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </>
+      ) : (
+        <img
+          src={content.image.url}
+          alt={content.image.alt}
+          className="h-full w-full object-cover"
+        />
+      )}
     </ScrollReveal>
   );
 

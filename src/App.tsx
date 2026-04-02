@@ -13,11 +13,11 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="evaluacion-oportunidad" element={<OpportunityAssessment />} />
-          <Route path="analisis-comparativo" element={<CMA />} />
-          <Route path="tesis-inversion" element={<InvestmentThesis />} />
-          <Route path="creacion-valor" element={<ValueCreation />} />
-          <Route path="ejecucion-estrategica" element={<StrategicExecution />} />
+          <Route path="contexto-y-analisis" element={<OpportunityAssessment />} />
+          <Route path="plan-maestro-y-financiero" element={<CMA />} />
+          <Route path="oportunidad-de-inversion" element={<InvestmentThesis />} />
+          <Route path="propuesta-valor" element={<ValueCreation />} />
+          <Route path="estetica-y-posicionamiento" element={<StrategicExecution />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

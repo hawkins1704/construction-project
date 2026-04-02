@@ -5,9 +5,9 @@ export interface RouteConfig {
 
 export const routes: RouteConfig[] = [
   { path: '/', label: 'Inicio' },
-  { path: '/evaluacion-oportunidad', label: 'Contexto y Análisis' },
-  { path: '/analisis-comparativo', label: 'Plan Maestro y Financiero' },
-  { path: '/tesis-inversion', label: 'Oportunidad de Inversión' },
-  { path: '/creacion-valor', label: 'Propuesta de valor' },
-  { path: '/ejecucion-estrategica', label: 'Estética y Posicionamiento' },
+  { path: '/contexto-y-analisis', label: 'Contexto y Análisis' },
+  { path: '/plan-maestro-y-financiero', label: 'Plan Maestro y Financiero' },
+  { path: '/oportunidad-de-inversion', label: 'Oportunidad de Inversión' },
+  { path: '/propuesta-valor', label: 'Propuesta de valor' },
+  { path: '/estetica-y-posicionamiento', label: 'Estética y Posicionamiento' },
 ];

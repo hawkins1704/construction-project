@@ -45,6 +45,8 @@ export interface ImageGridContent {
   columns?: 2 | 3 | 4;
 }
 
+export type ImageWithTextImagesLayout = 'stack' | 'sideBySide';
+
 export interface ImageWithTextContent {
   title: string;
   description?: string;
@@ -52,6 +54,16 @@ export interface ImageWithTextContent {
     url: string;
     alt: string;
   };
+  /** Segunda imagen; se agrupa con la principal, siempre del mismo lado que el texto opuesto. */
+  secondImage?: {
+    url: string;
+    alt: string;
+  };
+  /**
+   * Con dos imágenes: apiladas o una al lado de la otra.
+   * En pantallas pequeñas, `sideBySide` pasa a columna hasta `sm` para legibilidad.
+   */
+  imagesLayout?: ImageWithTextImagesLayout;
   imagePosition?: 'left' | 'right';
   button?: {
     label: string;

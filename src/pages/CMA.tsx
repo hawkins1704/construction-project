@@ -1,6 +1,6 @@
-import { BulletList, ImageWithText,  TextWithSidebar } from '../components/sections';
+import { BulletList, ImageGrid, ImageWithText,  TextWithSidebar } from '../components/sections';
 
-const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop';
+const PLACEHOLDER_IMAGE = '/images/maestro-1.jpg';
 
 export const CMA = () => {
   return (
@@ -58,10 +58,27 @@ export const CMA = () => {
           title: 'Conclusión del CMA',
           description: `El mercado respalda un ARV conservador de $339,000. Con apreciación moderada del 5% en 12 meses, el rango proyectado puede situarse en $355,000–$356,000.`,
           image: {
-            url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
+            url: '/images/maestro-2.jpg',
             alt: 'Conclusión CMA',
           },
+          secondImage: {
+            url: '/images/maestro-3.jpg',
+            alt: 'Conclusión CMA',
+          },
+          imagesLayout: 'sideBySide',
           imagePosition: 'left',
+        }}
+      />
+      <ImageGrid
+        theme="light"
+        content={{
+          title: ' ',
+          images: [
+            { url: '/images/maestro-4.jpg', alt: 'Imagen 1' },
+            { url: '/images/maestro-5.jpg', alt: 'Imagen 2' },
+            { url: '/images/maestro-6.jpg', alt: 'Imagen 3' },
+            { url: '/images/maestro-7.jpg', alt: 'Imagen 4' },
+          ],
         }}
       />
     </>

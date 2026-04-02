@@ -1,6 +1,6 @@
-import { ImageWithText, StatsSection, TextWithSidebar } from '../components/sections';
+import { ImageGrid, ImageWithText, StatsSection, TextWithSidebar } from '../components/sections';
 
-const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop';
+const PLACEHOLDER_IMAGE = '/images/contexto-8.jpg';
 
 export const OpportunityAssessment = () => {
   return (
@@ -74,6 +74,7 @@ export const OpportunityAssessment = () => {
             { title: 'Construcción +10%', value: 'ROI ~3–5%' },
           ],
         }}
+        
       />
 
       <ImageWithText
@@ -84,7 +85,7 @@ export const OpportunityAssessment = () => {
 
 Por debajo de ese nivel, el margen se comprime significativamente. Por encima de $350,000, el proyecto entra en zona de retorno defendible.`,
           image: {
-            url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
+            url: '/images/contexto-2.jpg',
             alt: 'Punto de equilibrio',
           },
           imagePosition: 'left',
@@ -99,10 +100,24 @@ Por debajo de ese nivel, el margen se comprime significativamente. Por encima de
 
 Conclusión: la creación de valor no proviene del terreno por sí solo, sino del desarrollo estratégico y eficiente.`,
           image: {
-            url: PLACEHOLDER_IMAGE,
+            url: '/images/contexto-6.jpg',
             alt: 'Land flipping',
           },
           imagePosition: 'right',
+        }}
+      />
+      <ImageGrid
+        theme="light"
+        content={{
+          title: ' ',
+          images: [
+            { url: '/images/contexto-3.jpg', alt: 'Imagen 1' },
+            { url: '/images/contexto-4.jpg', alt: 'Imagen 2' },
+            { url: '/images/contexto-5.jpg', alt: 'Imagen 3' },
+            { url: '/images/contexto-7.jpg', alt: 'Imagen 4' },
+            { url: '/images/contexto-1.jpg', alt: 'Imagen 5' },
+          
+          ],
         }}
       />
     </>
