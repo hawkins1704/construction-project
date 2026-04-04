@@ -1,4 +1,5 @@
 import {
+  BulletList,
   ImageWithText,
   StatsSection,
   TextWithSidebar,
@@ -9,6 +10,73 @@ const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be616
 export const StrategicExecution = () => {
   return (
     <>
+      <TextWithSidebar
+        theme="dark"
+        content={{
+          title: 'Halcón Dorado y el mercado Oconee (2026)',
+          mainText: `Para el proyecto Halcón Dorado, el análisis de mercado en Oconee, South Carolina (2026) nos permite identificar un perfil de comprador muy específico. No estamos vendiendo solo una casa de 3 habitaciones; estamos vendiendo un "Refugio de Estatus".
+
+Aquí tienes el desglose del Buyer Persona y los motivos detrás de esta selección:`,
+          sidebar: {
+            title: 'Contexto',
+            items: [
+              { label: 'Proyecto', value: 'Halcón Dorado' },
+              { label: 'Mercado', value: 'Oconee, SC' },
+              { label: 'Enfoque', value: 'Refugio de Estatus' },
+            ],
+          },
+        }}
+      />
+
+      <BulletList
+        theme="light"
+        content={{
+          title: 'El Perfil: "The Affluent Trailblazer" (El Pionero Afluente)',
+          description: '1. Datos demográficos y psicográficos',
+          columns: 1,
+          items: [
+            'Edad: 45 a 65 años.',
+            'Perfil: Profesionales de alto nivel de Greenville o Atlanta que buscan una segunda residencia, o Baby Boomers activos en fase de pre-retiro.',
+            'Ingresos: HHI (Household Income) superior a $180,000 USD anuales.',
+            'Intereses: Náutica (Lago Keowee/Hartwell), senderismo en las Blue Ridge Mountains, coleccionismo de vinos y tecnología Smart Home.',
+          ],
+        }}
+      />
+
+      <TextWithSidebar
+        theme="dark"
+        content={{
+          title: 'BUYER PERSON',
+          mainText: `A. El Factor "Escapismo de Lujo"
+
+Oconee se ha consolidado en 2026 como el "Hamptons del Sur". El comprador ideal ya tiene una residencia principal urbana y busca en la Halcón Dorado una desconexión total sin perder las comodidades de la ciudad. El diseño Modern Mountain Craftsman con el siding ocre le da esa sensación de "cabaña" pero con la ejecución técnica de una mansión moderna.
+
+B. Valoración del "Turnkey" (Llave en mano)
+
+Este perfil de comprador no tiene tiempo para gestionar obras. Valoran que el proyecto incluya:
+
+• Logística resuelta: Un cronograma de 12 meses ya planificado.
+• Curaduría de materiales: Prefieren pagar un sobreprecio por el HardiePanel y los Shingles de alta gama que nosotros ya especificamos, porque saben que significa bajo mantenimiento.
+
+C. La Necesidad de "Socialización Privada"
+
+Motivo por el cual nuestra Summer Kitchen y el Fire Pit son los ganchos de venta principales. Este comprador no va a bares; invita a sus amigos a su casa. El área trasera de la Halcón Dorado está diseñada precisamente para este ritual social de estatus.
+
+D. Conciencia de Inversión (Smart Asset)
+
+A diferencia de un comprador de primera vivienda, este perfil entiende el ARV ($526k) y el LTV. Compran la casa como un activo que se revaloriza. Saben que Oconee tiene una oferta limitada de lotes de 13,000+ sqft con este nivel de diseño arquitectónico.`,
+          sidebar: {
+            title: 'Ejes del perfil',
+            items: [
+              { label: 'A', value: 'Escapismo de lujo' },
+              { label: 'B', value: 'Turnkey / logística' },
+              { label: 'C', value: 'Socialización privada' },
+              { label: 'D', value: 'Activo (ARV / LTV)' },
+            ],
+          },
+        }}
+      />
+
       <ImageWithText
         theme="light"
         content={{
