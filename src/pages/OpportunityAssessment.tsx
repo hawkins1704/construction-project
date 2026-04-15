@@ -106,8 +106,32 @@ Conclusión: la creación de valor no proviene del terreno por sí solo, sino de
           imagePosition: 'right',
         }}
       />
-      <ImageGrid
+      <ImageWithText
         theme="light"
+        content={{
+          title: 'Conclusión del CMA',
+          description: `El mercado respalda un ARV conservador de $339,000. Con apreciación moderada del 5% en 12 meses, el rango proyectado puede situarse en $355,000–$356,000.`,
+          image: {
+            url: '/images/maestro-2.jpg',
+            alt: 'Conclusión CMA',
+          },
+          secondImage: {
+            url: '/images/maestro-3.jpg',
+            alt: 'Conclusión CMA',
+          },
+          imagesLayout: 'sideBySide',
+          imagePosition: 'left',
+          attachments: [
+            {
+              url: '/files/CMA_FINAL_.xlsx',
+              label: 'CMA_FINAL_.xlsx',
+              type: 'excel',
+            },
+          ],
+        }}
+      />
+      <ImageGrid
+        theme="dark"
         content={{
           title: ' ',
           images: [

@@ -1,5 +1,6 @@
 import type { ImageWithTextContent, BaseSectionProps } from '../../types/sections';
 import { Button } from '../ui/Button';
+import { DocumentAttachment } from '../ui/DocumentAttachment';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 interface ImageWithTextProps extends BaseSectionProps {
@@ -77,6 +78,19 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
       </h2>
       {content.description && (
         <p className={`mb-6 text-paragraph leading-relaxed ${textMutedClass}`}>{content.description}</p>
+      )}
+      {content.attachments && content.attachments.length > 0 && (
+        <div className="mb-6 flex flex-col gap-3">
+          {content.attachments.map((file, i) => (
+            <DocumentAttachment
+              key={`${file.url}-${i}`}
+              fileUrl={file.url}
+              fileName={file.label}
+              kind={file.type}
+              theme={theme}
+            />
+          ))}
+        </div>
       )}
       {content.lists?.map((list, i) => (
         <div key={i} className="mb-6 last:mb-0">

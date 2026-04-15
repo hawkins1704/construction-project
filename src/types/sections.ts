@@ -47,6 +47,25 @@ export interface ImageGridContent {
 
 export type ImageWithTextImagesLayout = 'stack' | 'sideBySide';
 
+export type DocumentAttachmentType = 'pdf' | 'excel' | 'word' | 'image';
+
+export interface FileGalleryItem {
+  url: string;
+  /** Nombre mostrado (archivo o título corto) */
+  label: string;
+  type: DocumentAttachmentType;
+  /** Accesibilidad cuando `type` es `image` */
+  alt?: string;
+  caption?: string;
+}
+
+export interface FileGalleryContent {
+  title?: string;
+  description?: string;
+  items: FileGalleryItem[];
+  columns?: 2 | 3 | 4;
+}
+
 export interface ImageWithTextContent {
   title: string;
   description?: string;
@@ -71,6 +90,12 @@ export interface ImageWithTextContent {
   };
   /** Listas con título para mostrar debajo de la descripción */
   lists?: { title: string; items: string[] }[];
+  /** Archivos con miniatura (icono + nombre); al hacer clic se abre un visor en modal */
+  attachments?: {
+    url: string;
+    label: string;
+    type: DocumentAttachmentType;
+  }[];
 }
 
 export interface VideoContent {

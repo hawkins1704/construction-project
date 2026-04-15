@@ -1,5 +1,6 @@
 export { Banner } from './Banner';
 export { BulletList } from './BulletList';
+export { FileGallery } from './FileGallery';
 export { HeroWithSidebar } from './HeroWithSidebar';
 export { ImageGrid } from './ImageGrid';
 export { ImageWithText } from './ImageWithText';

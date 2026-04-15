@@ -1,0 +1,819 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 612. 792.]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 7712
+>>
+stream
+0.200025 w
+0 G
+0.13 0.55 0.9 rg
+0. 792. 612. -4. re
+f
+BT
+/F2 18 Tf
+20.6999999999999993 TL
+0.133 0.545 0.902 rg
+40. 738. Td
+(PLANITRON) Tj
+ET
+BT
+/F2 14 Tf
+16.0999999999999979 TL
+0.157 g
+40. 724. Td
+(Custom Analysis Result) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.51 g
+523.0399999999999636 724. Td
+(April 13, 2026) Tj
+ET
+0.13 0.55 0.9 RG
+1.5 w
+40. 716. m
+572. 716. l
+S
+BT
+/F3 7 Tf
+8.0499999999999989 TL
+0.471 g
+40. 702. Td
+(AI measurements are estimates. Always verify against drawings before ordering materials.) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0. g
+40. 685. Td
+(Query:) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+46. 673. Td
+("MEP Analysis \(Mechanical, Electrical, Plumbing\)") Tj
+ET
+0.13 0.55 0.9 rg
+40. 661. 3. -14. re
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.157 g
+50. 650. Td
+(Findings) Tj
+ET
+0.97 0.97 0.99 rg
+40. 643. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 634. Td
+(Electrical Outlets) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+529.1900000000000546 634. Td
+(39 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 620. Td
+(Duplex: 28, GFCI: 8, 220V: 2, Floor: 1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 607. Td
+(Switches) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+529.1900000000000546 607. Td
+(24 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 593. Td
+(Single: 14, 3-way: 6, 4-way: 0, Dimmer: 4) Tj
+ET
+0.97 0.97 0.99 rg
+40. 589. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 580. Td
+(Light Fixtures) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+529.1900000000000546 580. Td
+(43 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 566. Td
+(Recessed: 18, Pendant: 2, Ceiling Fan: 4, Exterior: 5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 553. Td
+(Electrical Panels) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 553. Td
+(1 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 539. Td
+(Main: 1, Sub: 0) Tj
+ET
+0.97 0.97 0.99 rg
+40. 535. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 526. Td
+(Smoke/CO Detectors) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 526. Td
+(6 count) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 512. Td
+(Low Voltage) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 512. Td
+(6 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 498. Td
+(Data: 4, Phone: 1, Speaker: 0, Doorbell: 1) Tj
+ET
+0.97 0.97 0.99 rg
+40. 494. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 485. Td
+(Sinks) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 485. Td
+(9 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 471. Td
+(Kitchen, Master Bath, Bath, Laundry, Kitchen) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 458. Td
+(Toilets) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 458. Td
+(4 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 444. Td
+(Master Bath, Bath, Master Bath, Bath 2) Tj
+ET
+0.97 0.97 0.99 rg
+40. 440. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 431. Td
+(Bathtubs) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 431. Td
+(2 count) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 417. Td
+(Showers) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 417. Td
+(2 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 412. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 403. Td
+(Laundry Connections) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 403. Td
+(2 count) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 389. Td
+(Water Heater) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+490.3100000000000023 389. Td
+(Tank or Tankless ) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 375. Td
+(Mechanical Closet \(Garage-side\)) Tj
+ET
+0.97 0.97 0.99 rg
+40. 371. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 362. Td
+(Hose Bibs) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 362. Td
+(3 count) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 348. Td
+(Floor Drains) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 348. Td
+(1 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 343. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 334. Td
+(Gas Lines/Stubs) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 334. Td
+(7 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 320. Td
+(Range, Fireplace, Furnace, Gas Bib) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 307. Td
+(Cleanouts) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 307. Td
+(2 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 302. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 293. Td
+(Furnace / Air Handler) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 293. Td
+(2 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 279. Td
+(Mechanical Closet off Garage, Crawl Space/Attic) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 266. Td
+(Condenser / Heat Pump) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 266. Td
+(1 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 261. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 252. Td
+(Supply Registers) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+529.1900000000000546 252. Td
+(14 count) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 238. Td
+(Return Air Grilles) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 238. Td
+(2 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 233. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 224. Td
+(Exhaust Fans) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 224. Td
+(8 count) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.392 g
+52. 210. Td
+(Bath: 4, Range Hood: 2, Laundry: 2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 197. Td
+(Thermostats) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+534.1399999999999864 197. Td
+(2 count) Tj
+ET
+0.97 0.97 0.99 rg
+40. 192. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 183. Td
+(Ductwork \(estimated\)) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+537.6499999999999773 183. Td
+(215 LF) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 169. Td
+(Est. Cooling Size) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+527.1200000000000045 169. Td
+(2.5 Tons ) Tj
+ET
+0.97 0.97 0.99 rg
+40. 164. 532. -14. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 155. Td
+(Est. Heating Size) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+515.2400000000000091 155. Td
+(40,000 BTU ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.157 g
+46. 141. Td
+(Est. Airflow) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+0.157 g
+521.7200000000000273 141. Td
+(1000 CFM ) Tj
+ET
+0.13 0.55 0.9 rg
+40. 130. 3. -14. re
+f
+BT
+/F2 10 Tf
+11.5 TL
+0.157 g
+50. 119. Td
+(Notes) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+46. 105. Td
+(Ductwork LF estimated from central air handler to all supply points. Gas stub-out included for Outdoor Living area. Electrical count includes all) Tj
+T* (legend-matched symbols on Sheet 3. | Sheet set contains architectural sections and MEP details/notes, but lacks a dedicated MEP floor plan for) Tj
+T* (precise outlet/fixture counts. Counts are derived from section indicators and general notes. Electrical junction boxes for future radon systems noted) Tj
+T* (on Page 8.) Tj
+ET
+0.13 0.55 0.9 RG
+0.5 w
+40. 32. m
+572. 32. l
+S
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.549 g
+40. 24. Td
+(Generated by Planitron) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.549 g
+541.1299999999999955 24. Td
+(4/13/2026) Tj
+ET
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.549 g
+295.0099999999999909 24. Td
+(Page 1) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 4.0.0)
+/CreationDate (D:20260413162918-04'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000007884 00000 n 
+0000009701 00000 n 
+0000000015 00000 n 
+0000000120 00000 n 
+0000007941 00000 n 
+0000008066 00000 n 
+0000008196 00000 n 
+0000008329 00000 n 
+0000008466 00000 n 
+0000008589 00000 n 
+0000008718 00000 n 
+0000008850 00000 n 
+0000008986 00000 n 
+0000009114 00000 n 
+0000009241 00000 n 
+0000009370 00000 n 
+0000009503 00000 n 
+0000009605 00000 n 
+0000009949 00000 n 
+0000010035 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <4BBDC7D852497E49FBE939A98874EE12> <4BBDC7D852497E49FBE939A98874EE12> ]
+>>
+startxref
+10139
+%%EOF
