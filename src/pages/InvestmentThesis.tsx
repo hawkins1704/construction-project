@@ -1,6 +1,6 @@
 import { BulletList, ImageWithText, StatsSection, TextWithSidebar } from '../components/sections';
 
-const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop';
+
 
 export const InvestmentThesis = () => {
   return (
