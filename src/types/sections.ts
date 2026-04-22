@@ -45,7 +45,7 @@ export interface ImageGridContent {
   columns?: 2 | 3 | 4;
 }
 
-export type ImageWithTextImagesLayout = 'stack' | 'sideBySide';
+export type ImageWithTextImagesLayout = 'stack' | 'sideBySide' | 'grid2x2';
 
 export type DocumentAttachmentType = 'pdf' | 'excel' | 'word' | 'image';
 
@@ -78,8 +78,18 @@ export interface ImageWithTextContent {
     url: string;
     alt: string;
   };
+  /** Tercera y cuarta imagen; solo se usan con `imagesLayout: 'grid2x2'` (hasta 4 en grilla 2×2). */
+  thirdImage?: {
+    url: string;
+    alt: string;
+  };
+  fourthImage?: {
+    url: string;
+    alt: string;
+  };
   /**
    * Con dos imágenes: apiladas o una al lado de la otra.
+   * Con `grid2x2`: hasta cuatro imágenes en grilla de dos columnas (en móvil siguen siendo 2 columnas).
    * En pantallas pequeñas, `sideBySide` pasa a columna hasta `sm` para legibilidad.
    */
   imagesLayout?: ImageWithTextImagesLayout;

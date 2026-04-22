@@ -83,7 +83,7 @@ A diferencia de un comprador de primera vivienda, este perfil entiende el ARV ($
           title: 'Estética y Posicionamiento',
           description: `Este diseño es un excelente ejemplo de "Mountain Modern", lo cual encaja perfectamente en Oconee, SC. La propuesta combina la calidez de la madera tradicional de Carolina del Sur con estándares de eficiencia energética modernos.`,
           image: {
-            url: PLACEHOLDER_IMAGE,
+            url: '/images/home-image-1.PNG',
             alt: 'Mountain Modern - Halcón de Cedro',
           },
           imagePosition: 'right',

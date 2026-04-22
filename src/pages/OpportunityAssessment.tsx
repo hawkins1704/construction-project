@@ -26,10 +26,11 @@ export const OpportunityAssessment = () => {
           columns: 3,
           cards: [
             { title: 'Adquisición del lote', value: '$45,000' },
-            { title: 'Construcción living (2,064 sqft × $115)', value: '$237,360' },
-            { title: 'Construcción garage (588 sqft × $55)', value: '$32,340' },
-            { title: 'Soft costs + permisos + contingencia', value: '$48,546' },
-            { title: 'Inversión total estimada', value: '$318,246' },
+            { title: 'Construcción living (1,522 sqft × $130)', value: '$197,860' },
+            { title: 'Construcción garage (533 sqft × $65)', value: '$34,645' },
+            { title: 'Construcción porche y exterior (206 sqft × $65)', value: '$16,900' },
+            { title: 'Soft costs + permisos + contingencia', value: '$61,343' },
+            { title: 'Inversión total estimada', value: '$355,000' },
           ],
         }}
       />
@@ -112,14 +113,22 @@ Conclusión: la creación de valor no proviene del terreno por sí solo, sino de
           title: 'Conclusión del CMA',
           description: `El mercado respalda un ARV conservador de $339,000. Con apreciación moderada del 5% en 12 meses, el rango proyectado puede situarse en $355,000–$356,000.`,
           image: {
-            url: '/images/maestro-2.jpg',
-            alt: 'Conclusión CMA',
+            url: '/images/img-1-cma.png',
+            alt: 'Conclusión CMA — comparable 1',
           },
           secondImage: {
-            url: '/images/maestro-3.jpg',
-            alt: 'Conclusión CMA',
+            url: '/images/img-2-cma.png',
+            alt: 'Conclusión CMA — comparable 2',
           },
-          imagesLayout: 'sideBySide',
+          thirdImage: {
+            url: '/images/img-3-cma.png',
+            alt: 'Conclusión CMA — comparable 3',
+          },
+          fourthImage: {
+            url: '/images/img-4-cma.png',
+            alt: 'Conclusión CMA — comparable 4',
+          },
+          imagesLayout: 'grid2x2',
           imagePosition: 'left',
           attachments: [
             {

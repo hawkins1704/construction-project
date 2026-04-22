@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import type { ImageWithTextContent, BaseSectionProps } from '../../types/sections';
 import { Button } from '../ui/Button';
 import { DocumentAttachment } from '../ui/DocumentAttachment';
+import { ImageViewer } from '../ui/ImageViewer';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 interface ImageWithTextProps extends BaseSectionProps {
@@ -8,10 +10,20 @@ interface ImageWithTextProps extends BaseSectionProps {
 }
 
 export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) => {
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [viewerIndex, setViewerIndex] = useState(0);
   const isLight = theme === 'light';
   const imageFirst = content.imagePosition === 'right';
-  const hasTwoImages = Boolean(content.secondImage);
   const imagesLayout = content.imagesLayout ?? 'stack';
+  const isGridLayout = imagesLayout === 'grid2x2';
+  const gridImages = isGridLayout
+    ? ([content.image, content.secondImage, content.thirdImage, content.fourthImage].filter(Boolean) as {
+        url: string;
+        alt: string;
+      }[])
+    : [];
+  const hasTwoImages = Boolean(content.secondImage) && !isGridLayout;
+  const viewerImages = isGridLayout ? gridImages : hasTwoImages ? [content.image, content.secondImage!] : [content.image];
 
   const bgClass = isLight ? 'bg-cream' : 'bg-forest';
   const textClass = isLight ? 'text-earth' : 'text-cream';
@@ -20,11 +32,17 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
   const imageFrameClass =
     'overflow-hidden rounded-2xl aspect-[4/3] bg-charcoal/5 lg:aspect-auto lg:min-h-[280px]';
 
+  const imageButtonClass =
+    'cursor-pointer overflow-hidden text-left transition-transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2 ' +
+    (isLight ? 'focus:ring-forest' : 'focus:ring-sage');
+
   const pairContainerClass = hasTwoImages
     ? imagesLayout === 'sideBySide'
       ? 'flex flex-col gap-4 sm:flex-row sm:items-stretch'
       : 'flex flex-col gap-4'
     : '';
+
+  const singleImageWrapperClass = `${imageFrameClass} lg:min-h-[400px]`;
 
   const imageBlock = (
     <ScrollReveal
@@ -33,34 +51,73 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
       duration={0.8}
       start="top 85%"
       className={
-        hasTwoImages
-          ? pairContainerClass
-          : `${imageFrameClass} lg:min-h-[400px]`
+        isGridLayout
+          ? 'grid grid-cols-2 gap-4'
+          : hasTwoImages
+            ? pairContainerClass
+            : singleImageWrapperClass
       }
     >
-      {hasTwoImages ? (
+      {isGridLayout ? (
+        gridImages.map((img, i) => (
+          <button
+            key={`${img.url}-${i}`}
+            type="button"
+            onClick={() => {
+              setViewerIndex(i);
+              setViewerOpen(true);
+            }}
+            className={`${imageButtonClass} ${imageFrameClass} min-h-[140px] sm:min-h-[180px] lg:min-h-[220px]`}
+          >
+            <img src={img.url} alt={img.alt} className="h-full w-full object-cover" />
+          </button>
+        ))
+      ) : hasTwoImages ? (
         <>
-          <div className={`${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}>
+          <button
+            type="button"
+            onClick={() => {
+              setViewerIndex(0);
+              setViewerOpen(true);
+            }}
+            className={`${imageButtonClass} ${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}
+          >
             <img
               src={content.image.url}
               alt={content.image.alt}
               className="h-full w-full object-cover"
             />
-          </div>
-          <div className={`${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}>
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setViewerIndex(1);
+              setViewerOpen(true);
+            }}
+            className={`${imageButtonClass} ${imageFrameClass} min-h-0 flex-1 sm:min-h-[240px] lg:min-h-[320px]`}
+          >
             <img
               src={content.secondImage!.url}
               alt={content.secondImage!.alt}
               className="h-full w-full object-cover"
             />
-          </div>
+          </button>
         </>
       ) : (
-        <img
-          src={content.image.url}
-          alt={content.image.alt}
-          className="h-full w-full object-cover"
-        />
+        <button
+          type="button"
+          onClick={() => {
+            setViewerIndex(0);
+            setViewerOpen(true);
+          }}
+          className={`${imageButtonClass} ${singleImageWrapperClass}`}
+        >
+          <img
+            src={content.image.url}
+            alt={content.image.alt}
+            className="h-full w-full object-cover"
+          />
+        </button>
       )}
     </ScrollReveal>
   );
@@ -127,6 +184,15 @@ export const ImageWithText = ({ theme = 'light', content }: ImageWithTextProps) 
           {imageFirst ? imageBlock : textBlock}
         </div>
       </div>
+
+      {viewerOpen && (
+        <ImageViewer
+          images={viewerImages}
+          currentIndex={viewerIndex}
+          onClose={() => setViewerOpen(false)}
+          onNavigate={setViewerIndex}
+        />
+      )}
     </section>
   );
 };

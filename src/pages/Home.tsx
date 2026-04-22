@@ -22,10 +22,11 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
           sidebar: {
             title: 'Programa del proyecto',
             items: [
-              { label: 'Área climatizada (Living)', value: '2,064 sqft' },
-              { label: 'Garage', value: '588 sqft' },
-              { label: 'Área total bajo techo', value: '2,955 sqft' },
-              { label: 'Lote', value: '13,057 sqft' },
+              { label: 'Área climatizada (Living)', value: '1,522 sqft' },
+              { label: 'Garage', value: '533 sqft' },
+              { label: 'Porche y exterior', value: '280 sqft' },
+              { label: 'Área total bajo techo', value: '2,355 sqft' },
+              { label: 'Lote', value: '0.292 acres (12,707 sqft)' },
             ],
           },
       
@@ -43,16 +44,17 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
           useSectionLabels: true,
           cards: [
             { title: 'Lote', value: '$45,000', section: 'Capex estimado' },
-            { title: 'Construcción Living (2,064 × $115)', value: '$237,360', section: 'Capex estimado' },
-            { title: 'Construcción Garage (588 × $55)', value: '$32,340', section: 'Capex estimado' },
-            { title: 'Soft cost (8%) + contingencia (10%)', value: '$48,546', section: 'Capex estimado' },
-            { title: 'Total inversión', value: '$318,246', section: 'Capex estimado' },
-            { title: 'Comparables', value: '$492,109', section: 'Validación de ARV' },
-            { title: 'Proyección 12 meses', value: '$526,320', section: 'Validación de ARV' },
-            { title: 'Comisión + closing (estimado)', value: '6.5%', section: 'Costos de Salida' },
-            { title: 'Conservador ($230/sf)', value: '$125,617', subtitle: '28.30% · $443,863 ARV', section: 'Rango de Retorno con Salida Incluida' },
-            { title: 'Objetivo ($255/sf)', value: '$173,863', subtitle: '35.33% · $492,109 ARV', section: 'Rango de Retorno con Salida Incluida' },
-            { title: 'Optimista ($280/sf)', value: '$222,109', subtitle: '41.10% · $540,355 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Construcción Living (1,522 × $130)', value: '$197,860', section: 'Capex estimado' },
+            { title: 'Construcción Garage (533 × $55)', value: '$34,645', section: 'Capex estimado' },
+            { title: 'Construcción Porche y Exterior (280 × $65)', value: '$16,900', section: 'Capex estimado' },
+            { title: 'Soft cost (8%) + contingencia (10%)', value: '$61,343', section: 'Capex estimado' },
+            { title: 'Total inversión', value: '$310,346', section: 'Capex estimado' },
+            { title: 'Comparables', value: '$455,000', section: 'Validación de ARV' },
+            { title: 'Proyección 12 meses', value: '$464,610', section: 'Validación de ARV' },
+            { title: 'Comisión + closing (estimado)', value: '6.5% ($30,199)', section: 'Costos de Salida' },
+            { title: 'Conservador ($230/sf)', value: '$81,481', subtitle: '28.30% · $419,060 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Objetivo ($255/sf)', value: '$124,065', subtitle: '35.33% · $464,610 ARV', section: 'Rango de Retorno con Salida Incluida' },
+            { title: 'Optimista ($280/sf)', value: '$166,653', subtitle: '41.10% · $510,160 ARV', section: 'Rango de Retorno con Salida Incluida' },
           ],
         }}
       />
@@ -61,7 +63,7 @@ Nuestra propuesta se aleja del metraje excesivo para enfocarse en la densidad de
         theme="light"
         content={{
           title: 'Ubicación Estratégica y Demanda',
-          description: `Situado en un lote premium de 13,057 sqft, el emplazamiento capitaliza la migración hacia entornos naturales con conectividad técnica. La demanda en este sector busca la calidez de la madera tradicional de Carolina del Sur fusionada con estándares de eficiencia energética modernos, una combinación que nuestra propuesta "Halcón de Cedro" domina por completo.
+          description: `Situado en un lote premium de 12,707 sqft, el emplazamiento capitaliza la migración hacia entornos naturales con conectividad técnica. La demanda en este sector busca la calidez de la madera tradicional de Carolina del Sur fusionada con estándares de eficiencia energética modernos, una combinación que nuestra propuesta "Halcón de Cedro" domina por completo.
 
 Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores relocalizándose desde mercados más costosos, usuarios de segunda vivienda, inversionistas interesados en AB&B.`,
           image: {
@@ -76,7 +78,7 @@ Perfiles de demanda: Familias que buscan espacio y tranquilidad, compradores rel
         theme="dark"
         content={{
           title: 'Viabilidad Técnica y Financiera: Diagnóstico de Lote',
-          description: 'Con una superficie de 0.3 acres (13,057 sqft), el diagnóstico revela un coeficiente de ocupación ideal que permite privacidad perimetral y una integración orgánica de la estructura. La orientación de la vivienda maximiza la luz natural y el drenaje pluvial, minimizando los movimientos de tierra complejos.',
+          description: 'Con una superficie de 0.292 (12,707 sqft), el diagnóstico revela un coeficiente de ocupación ideal que permite privacidad perimetral y una integración orgánica de la estructura. La orientación de la vivienda maximiza la luz natural y el drenaje pluvial, minimizando los movimientos de tierra complejos.',
           image: {
             url: HOME_IMAGE_1,
             alt: 'Diagnóstico del lote',

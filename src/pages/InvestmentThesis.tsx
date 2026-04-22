@@ -13,7 +13,7 @@ export const InvestmentThesis = () => {
 
 La tesis del proyecto se fundamenta en: compra alineada a mercado real, construcción bajo parámetros regionales prudentes, inclusión completa de costos de salida, modelación de sensibilidad, y estrategia flexible de salida.`,
           image: {
-            url: PLACEHOLDER_IMAGE,
+            url: '/images/contexto-2.jpg',
             alt: 'Contexto estratégico',
           },
           imagePosition: 'right',
@@ -73,7 +73,7 @@ La tesis del proyecto se fundamenta en: compra alineada a mercado real, construc
           description:
             'Proceder bajo disciplina estricta de ejecución. El proyecto busca retornos consistentes y defendibles, no especulación de alto riesgo.',
           image: {
-            url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
+            url: '/images/home-image-2.PNG',
             alt: 'Recomendación',
           },
           imagePosition: 'left',

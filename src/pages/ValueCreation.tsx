@@ -12,7 +12,7 @@ export const ValueCreation = () => {
           description:
             'Un estándar de amenidades que combina lujo orgánico, tecnología, detalles a medida y resiliencia—pensado para la vida en las Carolinas y el comprador de 2026 en adelante.',
           image: {
-            url: PLACEHOLDER_IMAGE,
+            url: '/images/home-image-1.PNG',
             alt: 'Residencia en Oconee',
           },
           imagePosition: 'right',
@@ -25,7 +25,7 @@ export const ValueCreation = () => {
           title: 'Lujo orgánico y funcionalidad moderna',
           description: 'Cuatro ejes que definen la propuesta de valor de la vivienda: exterior vivido, tecnología eficiente, interiores con sello propio y resiliencia para vivir o desconectar con tranquilidad.',
           image: {
-            url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
+            url: '/images/home-image-2.PNG',
             alt: 'Espacio de vida interior y exterior',
           },
           imagePosition: 'left',
